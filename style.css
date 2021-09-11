@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   min-height: 8vh;
   background-color: #01012c;
@@ -23,6 +27,9 @@
 .logo {
   font-size: 20px;
   margin-left: 1rem;
+  font-family: "Hachi Maru Pop", cursive;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .links {
@@ -59,21 +66,34 @@
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   min-height: 100vh;
-  background: #01012c;
-}
-
-.mobile-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
+  background: -webkit-gradient(linear, left top, left bottom, from(45), color-stop(0%, #005ff7), color-stop(35%, #020024)), a;
+  background: linear-gradient(45, #005ff7 0%, #020024 35%), a;
+  background-color: white;
+  background-text-decoration: none;
+  background-font-size: 24px;
 }
 
 .hero {
   min-height: 92vh;
-  background-image: url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0.8)), to(#020024)), url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
+  background: linear-gradient(rgba(2, 0, 36, 0.8), #020024), url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media screen and (max-width: 500px) {
@@ -140,6 +160,56 @@
     color: white;
     text-decoration: none;
     font-size: 24px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 0 1.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#01012c)) url("https://images.pexels.com/photos/3201630/pexels-photo-3201630.jpeg");
+    background-image: linear-gradient(#01012c) url("https://images.pexels.com/photos/3201630/pexels-photo-3201630.jpeg");
+  }
+  .hero .left {
+    color: white;
+    margin-bottom: 1rem;
+    font-family: inherit;
+  }
+  .hero .left .name {
+    text-align: left;
+    color: #5e5ec0;
+    margin: 2rem 1.7rem;
+    line-height: 1.5;
+  }
+  .hero .left .name > span {
+    color: white;
+  }
+  .hero .left p {
+    margin: 1.7rem 2rem 0;
+  }
+  .hero .left .testbutton {
+    font-family: arial;
+    color: white !important;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 1.7rem 2rem 0;
+    background: #01012c;
+  }
+  .hero .left .testbutton:hover {
+    color: #14396a !important;
+    background: #468ccf;
+    background: -webkit-gradient(linear, left bottom, left top, from(#468ccf), to(#63b8ee));
+    background: linear-gradient(to top, #468ccf, #63b8ee);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   min-height: 8vh;
   background-color: rgb(1, 1, 44);
@@ -16,6 +20,9 @@
 .logo {
   font-size: 20px;
   margin-left: 1rem;
+  font-family: "Hachi Maru Pop", cursive;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .links {
@@ -43,9 +50,8 @@
   transition: 0.5s ease-in;
 
   min-height: 100vh;
-  background: rgb(1, 1, 44);
-
-  a {
+  background: linear-gradient(45, rgba(0, 95, 247, 1) 0%, rgba(2, 0, 36, 1) 35%),
+    a {
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -56,10 +62,20 @@
 
 .hero {
   min-height: 92vh;
-  background-image: url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
+  background: linear-gradient(rgba(2, 0, 36, 0.8), rgba(2, 0, 36, 1)),
+    url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 @media screen and (max-width: 500px) {
   .mobile-menu {
@@ -109,6 +125,54 @@
       color: white;
       text-decoration: none;
       font-size: 24px;
+    }
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 0 1.5rem;
+    background-image: linear-gradient(rgb(1, 1, 44))
+      url("https://images.pexels.com/photos/3201630/pexels-photo-3201630.jpeg");
+
+    .left {
+      color: white;
+      margin-bottom: 1rem;
+      font-family: inherit;
+
+      .name {
+        text-align: left;
+        color: rgb(94, 94, 192);
+        margin: 2rem 1.7rem;
+        line-height: 1.5;
+
+        & > span {
+          color: white;
+        }
+      }
+
+      p {
+        margin: 1.7rem 2rem 0;
+      }
+      .testbutton {
+        font-family: arial;
+        color: white !important;
+        font-size: 1.3rem;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        margin: 1.7rem 2rem 0;
+
+        background: rgb(1, 1, 44);
+      }
+      .testbutton:hover {
+        color: #14396a !important;
+        background: #468ccf;
+        background: linear-gradient(to top, #468ccf, #63b8ee);
+      }
     }
   }
 }
