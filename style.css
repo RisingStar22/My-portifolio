@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  min-height: 10vh;
+  min-height: 8vh;
   background-color: #01012c;
   color: white;
   display: -webkit-box;
@@ -55,11 +55,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-width: 50%;
+  min-width: 100%;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   min-height: 100vh;
   background: #01012c;
 }
@@ -68,6 +66,14 @@
   color: white;
   text-decoration: none;
   font-size: 24px;
+}
+
+.hero {
+  min-height: 92vh;
+  background-image: url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 500px) {

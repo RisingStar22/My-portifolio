@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  min-height: 10vh;
+  min-height: 8vh;
   background-color: rgb(1, 1, 44);
   color: white;
   display: flex;
@@ -39,9 +39,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 50%;
+  min-width: 100%;
   transition: 0.5s ease-in;
-  transform: translateX(100%);
+
   min-height: 100vh;
   background: rgb(1, 1, 44);
 
@@ -50,6 +50,16 @@
     text-decoration: none;
     font-size: 24px;
   }
+}
+
+// Hero
+
+.hero {
+  min-height: 92vh;
+  background-image: url("https://images.pexels.com/photos/4458421/pexels-photo-4458421.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 500px) {
   .mobile-menu {
