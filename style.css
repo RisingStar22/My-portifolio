@@ -52,9 +52,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-height: 90vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 50%;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  min-height: 100vh;
   background: #01012c;
 }
 
@@ -122,7 +128,6 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    max-height: 80vh;
     background: #01012c;
   }
   .active a {

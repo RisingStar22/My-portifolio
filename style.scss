@@ -38,8 +38,11 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  min-height: 90vh;
+  justify-content: space-evenly;
+  max-width: 50%;
+  transition: 0.5s ease-in;
+  transform: translateX(100%);
+  min-height: 100vh;
   background: rgb(1, 1, 44);
 
   a {
@@ -89,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    max-height: 80vh;
+
     background: rgb(1, 1, 44);
 
     a {
