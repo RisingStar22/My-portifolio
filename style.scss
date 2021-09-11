@@ -9,6 +9,7 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
   scrollbar-width: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar {
