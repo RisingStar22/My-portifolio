@@ -6,6 +6,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
 }
 
 .navbar {
@@ -68,8 +71,48 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
+  padding: 2rem;
   justify-content: space-around;
   align-items: center;
+
+  .left {
+    flex: 1;
+    padding: 2rem;
+    .name {
+      text-align: left;
+      color: rgb(94, 94, 192);
+      margin: 2rem 1.7rem;
+      line-height: 1.5;
+
+      & > span {
+        color: white;
+      }
+    }
+
+    p {
+      margin: 1.7rem 2rem 0;
+    }
+    .testbutton {
+      font-family: arial;
+      color: white !important;
+      font-size: 1.3rem;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 10px;
+      margin: 1.7rem 2rem 0;
+
+      background: rgb(1, 1, 44);
+    }
+    .testbutton:hover {
+      color: #14396a !important;
+      background: #468ccf;
+      background: linear-gradient(to top, #468ccf, #63b8ee);
+    }
+  }
+  .right {
+    padding: 2rem;
+    flex: 1;
+  }
 }
 
 img {
